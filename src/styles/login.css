@@ -1,0 +1,26 @@
+@layer components {
+    form {
+        @apply flex flex-col gap-4 max-w-md mx-auto mt-8 bg-white rounded-xl shadow-lg p-8  mt-20;
+    }
+
+    label {
+        @apply text-sm font-medium text-gray-700
+    }
+
+    .input-text {
+        @apply border rounded-lg px-3 py-2 text-sm border-sky-300 focus:ring-sky-600 focus:border-sky-600
+    }
+
+    button {
+        @apply bg-sky-600 text-white py-2 px-4 rounded-md hover:bg-sky-700 transition-colors mt-5 w-full;
+    }
+
+    .secure-word-box {
+        @apply max-w-md mx-auto
+    }
+
+    .error {
+        @apply text-red-500 text-sm
+    }
+}
+

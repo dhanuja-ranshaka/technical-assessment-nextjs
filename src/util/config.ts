@@ -1,0 +1,6 @@
+export const CONFIG = {
+  JWT_SECRET: process.env.JWT_SECRET!,
+  SECURE_WORD_EXPIRY_SECONDS: parseInt(process.env.SECURE_WORD_EXPIRY_SECONDS || '60'),
+  SECURE_WORD_REQUEST_GAP_SECONDS: parseInt(process.env.SECURE_WORD_REQUEST_GAP_SECONDS || '10'),
+  MFA_MAX_ATTEMPTS: parseInt(process.env.MFA_MAX_ATTEMPTS || '3', 10),
+};

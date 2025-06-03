@@ -102,7 +102,7 @@ function SearchInput() {
       <input
         type="search"
         placeholder="Search documentation..."
-        className="search-input"
+        className="input-text"
       />
     </div>
   );
