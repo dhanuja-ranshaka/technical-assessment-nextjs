@@ -1,0 +1,26 @@
+@layer components {
+    .tableWrapper {
+        @apply p-4;
+    }
+
+    .table {
+        @apply min-w-full border-collapse border border-gray-300;
+    }
+
+    .headerRow {
+        @apply bg-gray-100;
+    }
+
+    .headerCell {
+        @apply border p-2 font-medium;
+    }
+
+    .row {
+        @apply even:bg-gray-50;
+    }
+
+    .cell {
+        @apply border p-2;
+    }
+
+}

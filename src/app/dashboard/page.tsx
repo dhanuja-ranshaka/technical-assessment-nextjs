@@ -1,7 +1,10 @@
+import TransactionTable from "@/components/TransactionTable";
+
 export default function DashboardPage() {
   return (
-    <div className="p-10 text-2xl font-bold text-center">
-      Dashboard
+    <div className="p-10 text-center">
+      <h2>Dashboard</h2>
+      <TransactionTable />
     </div>
   );
 }
