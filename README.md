@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/dhanuja-ranshaka/technical-assessment-nextjs.git
-cd secure-auth-demo
+cd technical-assessment-nextjs
 ```
 
 ### 2. Set Up Environment Variables
@@ -27,9 +27,10 @@ docker-compose up --build
 
 
 Mock user details:
+```
 username: john
 password: 123
-
+```
 
 For the MFA code, please check the server logs.
 ```
