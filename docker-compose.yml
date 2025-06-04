@@ -2,6 +2,7 @@ version: '3.9'
 services:
   app:
     build: .
+    container_name: technical-assessment-nextjs
     ports:
       - "3000:3000"
     env_file:
@@ -10,7 +11,7 @@ services:
       - redis
   redis:
     image: redis:7.2-alpine
-    container_name: my-redis
+    container_name: technical-assessment-redis
     ports:
       - "6379:6379"
     volumes:

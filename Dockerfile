@@ -1,9 +1,10 @@
-FROM node:22
+FROM node:20-slim
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
+RUN npm install -g npm@8
+RUN npm cache clean --force && npm install
 
 COPY . .
 
