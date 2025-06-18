@@ -24,7 +24,7 @@ REDIS_URL=redis://redis:6379
 ```
 
 ### 3. Run the project
-Make sure Docker and Docker compose is installed on your machine
+Make sure Docker and Docker compose is installed and running on your machine
 
 Run:
 ```

@@ -15,7 +15,6 @@ export default function Navbar() {
       <div className="navbar-desktop">
         <NavbarBrand />
         <NavLinks navigationData={navigationData} navWrapperClass='nav-wrapper-desktop' navLinkClass='nav-link-desktop' />
-        <LoginButton />
         <SearchInput />
       </div>
 
@@ -49,8 +48,27 @@ export default function Navbar() {
 
         <div className="navbar-mobile-expanded">
           <div className='navbar-mobile-header'>
+            <input type="checkbox" id="mobile-search-toggle" className="hidden peer" />
             <NavbarBrand />
             <SearchInput />
+            <label
+              htmlFor="mobile-search-toggle"
+              className="search-icon"
+              aria-label="Search"
+            >
+              <svg
+                className="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </label>
             <label
               htmlFor="mobile-menu-toggle"
               className="close-icon"
@@ -72,7 +90,6 @@ export default function Navbar() {
           </div>
 
           <NavLinks navigationData={navigationData} navWrapperClass='nav-wrapper-mobile' navLinkClass='nav-link-mobile' />
-          <LoginButton />
         </div>
       </div>
     </nav>
@@ -88,13 +105,7 @@ function NavbarBrand() {
   );
 }
 
-function LoginButton() {
-  return (
-    <Link href="/login" className="login-button">
-      Log in
-    </Link>
-  );
-}
+
 
 function SearchInput() {
   return (
